@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void imprimirNum(double num) {
+        for (int i = 1; i <= num; i++) {
+            for (int l = 1; l <= i; l++) {
+                System.out.print(i + " ");
+                }
+                System.out.println();
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double num = 0;
+        System.out.println("Digite um valor");
+        for (int i = 0; i < 1; i++) {
+            try {
+                num = sc.nextDouble();
+                if (num < 0) {
+                    System.out.println("Digite um valor maior que 0");
+                    sc.next();
+                    i--;
+                }
+            } catch(Exception e) {
+                System.out.println("Digite um valor válido");
+                sc.next();
+                i--;
+            }
+        }
+        imprimirNum(num);
+    }
+}

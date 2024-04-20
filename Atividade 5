@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Main {
+    public static double somaImposto(double taxaImposto, double custo) {
+        return custo + (custo * (taxaImposto / 100));
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Digite o valor do custo:");
+        double custo = sc.nextDouble();
+        System.out.println("Digite a taxa de imposto:");
+        double taxaImposto = sc.nextDouble();
+        double resultado = somaImposto(taxaImposto, custo);
+        System.out.println("O resultado é: " + resultado);
+        sc.close();
+    }
+}

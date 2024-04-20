@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main
+{
+    public static int num() {
+        Scanner sc = new Scanner (System.in);
+        int a, b, c;
+        System.out.println("Digite 3 números inteiros");
+        a = sc.nextInt();
+        b = sc.nextInt();
+        c = sc.nextInt();
+        return a+b+c;
+        
+    }
+	public static void main(String[] args) {
+	    int soma = num();
+		System.out.println(soma);
+	}
+}

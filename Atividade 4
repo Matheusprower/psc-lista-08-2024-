@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Main
+{
+    public static char valor(int a) {
+        if (a > 0) {
+            return 'P';
+        } else {
+            return 'N';
+        }
+        
+    }
+	public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        System.out.println("Digite um valor. 0 para negar");
+	    int val = sc.nextInt();
+	    char resultado = valor(val);
+		System.out.println(resultado);
+	}
+}
